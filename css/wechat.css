@@ -1,6 +1,7 @@
 html, body {
     width: 100%;
     height: 100%;
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
 }
 body, p, form, ul, li {
     margin: 0;
@@ -14,10 +15,25 @@ body, p, form, ul, li {
 	background-size: 100% 100%;
 
 }
-#wechat_iframe{
+#wechat_iframe {
 	position: absolute;
 	width:30%;
 	height:40%;
 	bottom: 2px;
 	right: 0;
+	z-index: 2;
+}
+#tip {
+	position: absolute;
+	text-align: center;
+	bottom: 2px;
+	right: 0;
+	border:1px solid #aaa;
+	width:20%;
+	height:40px;
+	line-height:40px;
+	box-shadow:1px 0px 10px #CCC;
+	border-radius:5px;
+	z-index: 1;
+	display: none;
 }
