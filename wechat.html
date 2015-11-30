@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<meta charset="UTF-8">
+	<title>百度一下，你就知道</title>
+	<link type="text/css" rel="stylesheet" href="css/wechat.css" />
+</head>
+<body>
+	<div id="baidu_bg">
+		<div id="wechat_iframe" onmouseover="iframe_In();" onmouseout="iframe_Out();">
+			<IFRAME id="iframe_chat" src="http://ocn27.com/demo/wechat/index.html" frameBorder=0 width="100%" height="100%" style="zoom:50%"></IFRAME>
+		</div>
+	</div>
+	<script>
+		function iframe_In(){
+			document.getElementById("iframe_chat").style.display = "block";
+		}
+		function iframe_Out(){
+			document.getElementById("iframe_chat").style.display = "none";
+		}
+	</script>
+</body>
+</html>
